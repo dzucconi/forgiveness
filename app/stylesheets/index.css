@@ -1,0 +1,63 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.sound {
+  position: fixed;
+  top: 1em;
+  left: 1em;
+  font-size: 50px;
+  animation: fade 3s;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.forgiveness {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: sans-serif;
+  font-size: 100px;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 800px) {
+  .forgiveness {
+    font-size: 75px;
+  }
+}
+
+@media (max-width: 640px) {
+  .forgiveness {
+    font-size: 50px;
+  }
+}
